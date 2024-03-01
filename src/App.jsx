@@ -11,11 +11,14 @@ import {
   TypingIndicator,
 } from "@chatscope/chat-ui-kit-react";
 
+const API_KEY = import.meta.env.VITE_API_KEY;
+
+const ChatGPTResponse =
+  "I will have the pleasure to help you with any questions related to Javascript as programming language or any framework or library that works with JavaScript";
 const systemMessage = {
   //  Explain things like you're talking to a software professional with 5 years of experience.
   role: "system",
-  content:
-    "Answer for question that is related to javascript or reactJs or nextJS only if anything else just response with please ask me anything related to javscript or react or nextjs.",
+  content: `Answer for question that is related to javascript or reactJs or nextJS only if anything else just response with ${ChatGPTResponse} .`,
 };
 
 function App() {
@@ -95,7 +98,35 @@ function App() {
       });
   }
 
-  return <div>App</div>;
+  return (
+    <div className="App">
+      <div
+        style={{
+          position: "relative",
+          height: "600px",
+          width: "500px",
+        }}
+      >
+        <MainContainer responsive>
+          <ChatContainer>
+            <MessageList
+              scrollBehavior="smooth"
+              typingIndicator={
+                isTyping ? (
+                  <TypingIndicator content="ChatGPT is typing" />
+                ) : null
+              }
+            >
+              {messages.map((message, i) => {
+                return <Message key={i} model={message} />;
+              })}
+            </MessageList>
+            <MessageInput placeholder="Type message here" onSend={handleSend} />
+          </ChatContainer>
+        </MainContainer>
+      </div>
+    </div>
+  );
 }
 
 export default App;
