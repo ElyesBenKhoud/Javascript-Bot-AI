@@ -18,7 +18,7 @@ const ChatGPTResponse =
 const systemMessage = {
   //  Explain things like you're talking to a software professional with 5 years of experience.
   role: "system",
-  content: `Answer for question that is related to javascript or reactJs or nextJS only if anything else just response with ${ChatGPTResponse} .`,
+  content: `Answer for question that is related to javascript or any framework or library that works with javascript only if anything else just response with ${ChatGPTResponse} .`,
 };
 
 function App() {
