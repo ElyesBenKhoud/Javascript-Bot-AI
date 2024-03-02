@@ -97,13 +97,7 @@ function Chat() {
   }
 
   return (
-    <div
-      style={{
-        position: "relative",
-        height: "600px",
-        width: "500px",
-      }}
-    >
+    <div className="chat">
       <MainContainer responsive>
         <ChatContainer>
           <MessageList
