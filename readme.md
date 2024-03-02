@@ -9,4 +9,3 @@ This bot comes to help newbies and developers who are starting their journey in 
 - [React](https://reactjs.org/)
 - ["react-simple-chatbot](https://chatscope.io/)
 
-Illustrations: https://undraw.co/
