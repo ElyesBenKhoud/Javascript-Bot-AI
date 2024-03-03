@@ -1,10 +1,82 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  text-align: center;
+body {
+  color: rgba(255, 255, 255, 0.87);
+  background-color: rgb(255, 204, 0);
+  margin: 0;
 }
 
 .chat {
   position: relative;
   height: 500px;
+}
+
+.content {
+}
+
+.suggestion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+.header {
+  height: 50px;
+  background-color: black;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.header ul {
+  cursor: pointer;
+  text-decoration: wavy;
+  font-style: italic;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: black;
+  padding: 20px 20px;
+}
+
+.input-container {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 70vw;
+  height: 40px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: rgb(255, 204, 0);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  max-width: 300px;
+  margin-top: 1rem;
+}
+
+.response-box {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  width: 70vw;
+  height: 40px;
 }
