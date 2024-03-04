@@ -33,7 +33,7 @@ function LandingPage() {
         </div>
       </header>
 
-      <div className="container relative mx-auto flex flex-col space-y-16 px-4 py-16 text-center lg:flex-row lg:space-y-0 lg:px-8 lg:py-32 lg:text-left xl:max-w-7xl">
+      <div className="container relative mx-auto flex flex-col h-screen  items-center justify-center  space-y-16 px-4 py-16 text-center lg:flex-row lg:space-y-0 lg:px-8 lg:py-32 lg:text-left xl:max-w-7xl">
         <div className="lg:flex lg:w-1/2 lg:items-center">
           <div>
             <h1 className="mb-4 text-4xl font-black text-black ">
@@ -70,8 +70,8 @@ function LandingPage() {
           </div>
         </div>
       </div>
-
-      <div class="bg-gray-100 text-gray-800">
+      <hr />
+      <div class="bg-white text-gray-800">
         <div class="container mx-auto space-y-16 px-4 py-16 lg:px-8 lg:py-32 xl:max-w-7xl">
           <div class="text-center">
             <div class="mb-1 text-sm font-bold uppercase tracking-wider text-gray-700 ">

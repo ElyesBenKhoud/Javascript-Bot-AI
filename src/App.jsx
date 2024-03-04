@@ -5,6 +5,7 @@ import "@chatscope/chat-ui-kit-styles/dist/default/styles.min.css";
 import QnA from "./components/QnA";
 import FreqQ from "./components/FreqQ";
 import LandingPage from "./components/LandingPage";
+import Cards from "./components/Cards";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <LandingPage />
 
       {/* <QnA /> */}
+      <Cards />
 
       <FreqQ />
     </div>
