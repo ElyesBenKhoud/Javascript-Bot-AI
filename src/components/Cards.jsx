@@ -7,7 +7,7 @@ function Cards() {
         <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <div class="rounded-lg border border-white bg-white p-5 shadow-sm transition hover:border-yellow-300  md:p-7 xl:p-10">
             <svg
-              class="hi-outline hi-rectangle-stack mb-5 inline-block size-12 text-blue-600 dark:text-blue-500"
+              class="hi-outline hi-rectangle-stack mb-5 inline-block size-12 text-gray-600"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -32,7 +32,7 @@ function Cards() {
           </div>
           <div class="rounded-lg border border-white bg-white p-5 shadow-sm transition hover:border-yellow-300  md:p-7 xl:p-10">
             <svg
-              class="hi-outline hi-cube mb-5 inline-block size-12 text-blue-600 dark:text-blue-500"
+              class="hi-outline hi-cube mb-5 inline-block size-12 text-gray-600"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -57,7 +57,7 @@ function Cards() {
           </div>
           <div class="rounded-lg border border-white bg-white p-5 shadow-sm transition hover:border-yellow-300  md:p-7 xl:p-10">
             <svg
-              class="hi-outline hi-cog mb-5 inline-block size-12 text-blue-600 dark:text-blue-500"
+              class="hi-outline hi-cog mb-5 inline-block size-12 text-gray-600"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"

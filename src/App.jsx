@@ -6,6 +6,7 @@ import QnA from "./components/QnA";
 import FreqQ from "./components/FreqQ";
 import LandingPage from "./components/LandingPage";
 import Cards from "./components/Cards";
+import Reviews from "./components/Reviews";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
 
       {/* <QnA /> */}
       <Cards />
-
+      <Reviews />
       <FreqQ />
     </div>
   );
