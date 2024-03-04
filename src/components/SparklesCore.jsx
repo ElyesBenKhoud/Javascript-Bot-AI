@@ -5,6 +5,7 @@ import { loadSlim } from "@tsparticles/slim";
 import { cn } from "../utils/cn";
 import { motion, useAnimation } from "framer-motion";
 
+//for testing purposes
 export const SparklesCore = (props) => {
   const {
     id,
