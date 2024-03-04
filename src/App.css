@@ -77,3 +77,12 @@ button {
   min-height: 72px;
   height: auto;
 }
+
+.logo-div {
+  background-color: white;
+}
+
+.logo {
+  max-width: 80px;
+  max-height: 80px;
+}
