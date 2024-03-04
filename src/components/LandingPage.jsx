@@ -19,13 +19,13 @@ function LandingPage() {
           <nav className="space-x-3 md:space-x-6">
             <a
               href="javascript:void(0)"
-              className="text-sm font-semibold text-gray-900 hover:text-yellow-300 "
+              className=" hover:text-yellow-300 text-l font-medium leading-relaxed text-gray-600  "
             >
               <span>About</span>
             </a>
             <a
               href="javascript:void(0)"
-              className="text-sm font-semibold text-gray-900 hover:text-yellow-300 "
+              className="text-l font-medium leading-relaxed text-gray-600  hover:text-yellow-300 "
             >
               <span>Pricing</span>
             </a>
