@@ -96,7 +96,7 @@ function QnA() {
   };
 
   return (
-    <div className="bg-white dark:bg-gray-900 dark:text-gray-100 py-16 px-4 lg:px-8 w-full">
+    <div className="bg-white  py-16 px-4 lg:px-8 w-full">
       <div className="mx-auto space-y-8 sm:space-y-0 sm:flex sm:justify-between sm:items-center flex-col">
         <div className="input-container  flex flex-col gap-6">
           <input

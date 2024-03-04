@@ -1,38 +1,19 @@
 import React from "react";
+import Cards from "./Cards";
+import FreQ from "./FreqQ";
 import logo from "../assets/jsai-logo.png";
+import Reviews from "./Reviews";
+
+import { useNavigate } from "react-router-dom";
+
 function LandingPage() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/javascript-ai");
+  };
   return (
     <div className="relative overflow-hidden bg-white ">
-      <header
-        id="page-header"
-        className="relative flex flex-none items-center py-8"
-      >
-        <div className="container mx-auto flex flex-col space-y-4 px-4 text-center sm:flex-row sm:items-center sm:justify-between sm:space-y-0 lg:px-8 xl:max-w-7xl">
-          <div className="logo-div">
-            <a
-              href="javascript:void(0)"
-              className="group inline-flex items-center space-x-2 text-lg font-bold tracking-wide text-gray-900 hover:text-gray-600 dark:text-gray-100 dark:hover:text-gray-300"
-            >
-              <img className="logo" src={logo} alt="AI Javascript" />
-            </a>
-          </div>
-          <nav className="space-x-3 md:space-x-6">
-            <a
-              href="javascript:void(0)"
-              className=" hover:text-yellow-300 text-l font-medium leading-relaxed text-gray-600  "
-            >
-              <span>About</span>
-            </a>
-            <a
-              href="javascript:void(0)"
-              className="text-l font-medium leading-relaxed text-gray-600  hover:text-yellow-300 "
-            >
-              <span>Pricing</span>
-            </a>
-          </nav>
-        </div>
-      </header>
-
       <div className="container relative mx-auto flex flex-col h-screen  items-center justify-center  space-y-16 px-4 py-16 text-center lg:flex-row lg:space-y-0 lg:px-8 lg:py-32 lg:text-left xl:max-w-7xl">
         <div className="lg:flex lg:w-1/2 lg:items-center">
           <div>
@@ -48,6 +29,7 @@ function LandingPage() {
               <a
                 href="javascript:void(0)"
                 className="inline-flex items-center justify-center space-x-2 rounded-lg border border-gray-300 bg-yellow-400 px-7 py-3.5 font-semibold leading-6 text-black  hover:bg-gray-300 hover:text-black hover:border-gray-300 focus:ring focus:ring-yellow-400 focus:ring-opacity-50 "
+                onClick={handleClick}
               >
                 <span>Get started</span>
               </a>
@@ -91,6 +73,9 @@ function LandingPage() {
           </div>
         </div>
       </div>
+      <Cards />
+      <Reviews />
+      <FreQ />
     </div>
   );
 }
