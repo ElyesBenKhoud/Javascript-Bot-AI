@@ -96,25 +96,32 @@ function QnA() {
   };
 
   return (
-    <div className="container">
-      <div className="input-container">
-        <input
-          type="text"
-          id="questionInput"
-          placeholder="Enter your question..."
-          value={question}
-          onChange={handleQuestionChange}
-        />
-        <button id="submitButton" onClick={handleSubmit}>
-          Submit
-        </button>
-      </div>
-      <div className="response-box" id="responseBox">
-        {loading ? (
-          <p>Loading...</p> // Display loader while loading
-        ) : (
-          response && renderResponseContent() && <p>{response}</p> // Display response if available
-        )}
+    <div className="bg-white dark:bg-gray-900 dark:text-gray-100 py-16 px-4 lg:px-8 w-full">
+      <div className="mx-auto space-y-8 sm:space-y-0 sm:flex sm:justify-between sm:items-center flex-col">
+        <div className="input-container  flex flex-col gap-6">
+          <input
+            type="text"
+            id="questionInput"
+            placeholder="Enter your question..."
+            value={question}
+            onChange={handleQuestionChange}
+            className="w-full sm:w-auto"
+          />
+          <button
+            id="submitButton"
+            onClick={handleSubmit}
+            className="mt-2 sm:mt-0 sm:ml-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          >
+            Submit
+          </button>
+          <div className="response-box" id="responseBox">
+            {loading ? (
+              <p>Loading...</p>
+            ) : (
+              response && renderResponseContent() && <p>{response}</p>
+            )}
+          </div>
+        </div>
       </div>
     </div>
   );

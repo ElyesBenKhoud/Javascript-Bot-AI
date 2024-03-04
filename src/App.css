@@ -1,15 +1,12 @@
 body {
   color: rgba(255, 255, 255, 0.87);
-  background-color: rgb(255, 204, 0);
+  /* background-color: rgb(255, 204, 0); */
   margin: 0;
 }
 
 .chat {
   position: relative;
   height: 500px;
-}
-
-.content {
 }
 
 .suggestion {
@@ -35,7 +32,7 @@ body {
   font-style: italic;
 }
 
-.container {
+/* .container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,7 +40,7 @@ body {
   height: 100%;
   background-color: black;
   padding: 20px 20px;
-}
+} */
 
 .input-container {
   margin-bottom: 20px;
@@ -67,7 +64,7 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  max-width: 300px;
+  /* max-width: 300px; */
   margin-top: 1rem;
 }
 
@@ -77,5 +74,6 @@ button {
   border-radius: 5px;
   text-align: center;
   width: 70vw;
+  min-height: 72px;
   height: auto;
 }
