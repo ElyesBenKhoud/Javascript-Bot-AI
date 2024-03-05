@@ -12,11 +12,13 @@ function ChatComponent() {
 
   return (
     <>
-      <div class="sm:grid sm:grid-flow-row-dense sm:grid-cols-3 sm:grid-rows-1 flex flex-col  items-center gap-10 sm:px-32">
-        <div class="sm:col-span-2">
+      <div className="sm:grid sm:grid-flow-row-dense sm:grid-cols-3 sm:grid-rows-1 flex flex-col  items-start gap-10 sm:px-32">
+        <div className="sm:col-span-2">
           <QnA question={question} setQuestion={setQuestion} />
         </div>
-        <Suggestions handleSuggestionClick={handleSuggestionClick} />
+        <div>
+          <Suggestions handleSuggestionClick={handleSuggestionClick} />
+        </div>
       </div>
       <StaticNumber />
     </>
