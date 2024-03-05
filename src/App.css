@@ -76,6 +76,7 @@ button {
   width: 70vw;
   min-height: 72px;
   height: auto;
+  white-space: pre-wrap;
 }
 
 .logo-div {
