@@ -1,8 +1,16 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 import logo from "../../assets/jsai-logo.png";
 
 //TODO set redirect to home page on logo click
 function Header() {
+  const navigate = useNavigate();
+
+  const handleNavigatoToHomePage = () => {
+    navigate("/");
+  };
+
   return (
     <header
       id="page-header"
@@ -13,6 +21,7 @@ function Header() {
           <a
             href="javascript:void(0)"
             className="group inline-flex items-center space-x-2 text-lg font-bold tracking-wide text-gray-900 hover:text-gray-600 dark:text-gray-100 dark:hover:text-gray-300"
+            onClick={handleNavigatoToHomePage}
           >
             <img className="logo" src={logo} alt="AI Javascript" />
           </a>

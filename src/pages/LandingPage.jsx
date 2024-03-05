@@ -1,18 +1,18 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 import Cards from "../components/Cards";
-import FreQ from "../components/FreqQ";
 import logo from "../assets/jsai-logo.png";
 import Reviews from "../components/UI/Reviews";
-
-import { useNavigate } from "react-router-dom";
 import StaticComponent from "../components/UI/StaticComponent";
 
 function LandingPage() {
   const navigate = useNavigate();
 
-  const handleClick = () => {
+  const handleNavigateToJSAI = () => {
     navigate("/javascript-ai");
   };
+
   return (
     <div className="relative overflow-hidden bg-white ">
       <div className="container relative mx-auto flex flex-col h-screen  items-center justify-center  space-y-16 px-4 py-16 text-center lg:flex-row lg:space-y-0 lg:px-8 lg:py-32 lg:text-left xl:max-w-7xl">
@@ -30,7 +30,7 @@ function LandingPage() {
               <a
                 href="javascript:void(0)"
                 className="inline-flex items-center justify-center space-x-2 rounded-lg border border-gray-300 bg-yellow-400 px-7 py-3.5 font-semibold leading-6 text-black  hover:bg-gray-300 hover:text-black hover:border-gray-300 focus:ring focus:ring-yellow-400 focus:ring-opacity-50 "
-                onClick={handleClick}
+                onClick={handleNavigateToJSAI}
               >
                 <span>Get started</span>
               </a>
