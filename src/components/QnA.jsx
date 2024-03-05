@@ -96,7 +96,7 @@ function QnA() {
   };
 
   return (
-    <div className="bg-gray-200  py-16 px-4 lg:px-8 w-full">
+    <div className=" py-16 px-4 lg:px-8 mx-28 rounded-lg shadow-md bg-gradient-to-tr from-yellow-300 via-yellow-100 to-gray-100">
       <div className="mx-auto space-y-8 sm:space-y-0 sm:flex sm:justify-between sm:items-center flex-col">
         <div className="input-container  flex flex-col gap-6">
           <input
@@ -110,7 +110,7 @@ function QnA() {
           <button
             id="submitButton"
             onClick={handleSubmit}
-            className="mt-2 sm:mt-0 sm:ml-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="mt-2 sm:mt-0 sm:ml-4 bg-gradient-to-tr from-gray-300 via-blue-100 to-gray-100 text-gray-700 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           >
             Submit
           </button>

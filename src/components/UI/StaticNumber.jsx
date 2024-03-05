@@ -9,9 +9,9 @@ function StaticNumber() {
       <div className="flex flex-col overflow-hidden rounded-lg bg-gray-600 shadow-sm ">
         <div className="flex grow items-center justify-between p-5">
           <dl className="space-y-1">
-            <dt className="text-2xl font-bold">146</dt>
+            <dt className="text-2xl font-bold">14k</dt>
             <dd className="text-sm font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">
-              Sales
+              Users online
             </dd>
           </dl>
           <div className="inline-flex items-center space-x-1 rounded-full bg-emerald-200 px-2 py-1 text-sm font-semibold leading-4 text-emerald-800">
@@ -27,13 +27,9 @@ function StaticNumber() {
                 clipRule="evenodd"
               />
             </svg>
-            <span>7.9%</span>
+            <span>17.9%</span>
           </div>
         </div>
-
-        <p className="block bg-gray-50 p-3 text-center text-sm font-medium text-blue-600 hover:bg-gray-100 hover:bg-opacity-75 hover:text-blue-700 active:bg-gray-50 dark:bg-gray-900/50 dark:text-blue-400 dark:hover:bg-gray-900/75 dark:hover:text-blue-300 dark:active:bg-gray-900/50">
-          View All Sales
-        </p>
       </div>
 
       <div className="flex flex-col overflow-hidden rounded-lg bg-gray-600 shadow-sm ">
@@ -41,7 +37,7 @@ function StaticNumber() {
           <dl className="space-y-1">
             <dt className="text-2xl font-bold">$5,128</dt>
             <dd className="text-sm font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">
-              Earnings
+              Requests costs
             </dd>
           </dl>
           <div className="inline-flex items-center space-x-1 rounded-full bg-rose-200 px-2 py-1 text-sm font-semibold leading-4 text-rose-800">
@@ -60,17 +56,14 @@ function StaticNumber() {
             <span>6.9%</span>
           </div>
         </div>
-        <p className="block bg-gray-50 p-3 text-center text-sm font-medium text-blue-600 hover:bg-gray-100 hover:bg-opacity-75 hover:text-blue-700 active:bg-gray-50 dark:bg-gray-900/50 dark:text-blue-400 dark:hover:bg-gray-900/75 dark:hover:text-blue-300 dark:active:bg-gray-900/50">
-          View all Earnings
-        </p>
       </div>
 
       <div className="flex flex-col overflow-hidden rounded-lg bg-gray-600 shadow-sm ">
         <div className="flex grow items-center justify-between p-5">
           <dl className="space-y-1">
-            <dt className="text-2xl font-bold">$2,670</dt>
+            <dt className="text-2xl font-bold">120k</dt>
             <dd className="text-sm font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">
-              Wallet
+              Daily Requests numbers
             </dd>
           </dl>
           <div className="inline-flex items-center space-x-1 rounded-full bg-emerald-200 px-2 py-1 text-sm font-semibold leading-4 text-emerald-800">
@@ -89,10 +82,6 @@ function StaticNumber() {
             <span>5.6%</span>
           </div>
         </div>
-
-        <p className="block bg-gray-50 p-3 text-center text-sm font-medium text-blue-600 hover:bg-gray-100 hover:bg-opacity-75 hover:text-blue-700 active:bg-gray-50 dark:bg-gray-900/50 dark:text-blue-400 dark:hover:bg-gray-900/75 dark:hover:text-blue-300 dark:active:bg-gray-900/50">
-          Check your Balance
-        </p>
       </div>
     </div>
   );
