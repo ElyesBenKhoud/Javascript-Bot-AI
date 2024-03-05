@@ -3,7 +3,7 @@ import React from "react";
 function StaticNumber() {
   return (
     <div
-      className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:gap-8 px-32 py-10"
+      className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:gap-8 sm:px-32 px-10 py-10"
       style={{ userSelect: "none" }}
     >
       <div className="flex flex-col overflow-hidden rounded-lg bg-gray-600 shadow-sm ">

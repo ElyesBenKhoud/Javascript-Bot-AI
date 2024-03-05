@@ -6,8 +6,7 @@ const API_KEY = import.meta.env.VITE_API_KEY;
 const systemMessage =
   "I will have the pleasure to help you with any questions related to JavaScript as a programming language or any framework or library that works with JavaScript.";
 
-function QnA() {
-  const [question, setQuestion] = useState("");
+function QnA({ question, setQuestion }) {
   const [response, setResponse] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -52,14 +51,10 @@ function QnA() {
       console.error("Error:", error);
     } finally {
       setLoading(false); // Deactivate loader
+      setQuestion("");
     }
   };
 
-  // Function to render response content
-  // Function to render response content
-  // Function to render response content
-  // Function to render response content
-  // Function to render response content
   const renderResponseContent = () => {
     // Split response by new line character to get individual lines
     const lines = response.split("\n");
@@ -98,7 +93,7 @@ function QnA() {
   };
 
   return (
-    <div className=" py-16 px-4 lg:px-8 mx-28 rounded-lg shadow-md bg-gradient-to-tr from-yellow-300 via-yellow-100 to-gray-100">
+    <div className=" py-16 px-10 lg:px-8 rounded-lg shadow-md bg-gradient-to-tr from-yellow-300 via-yellow-100 to-gray-100">
       <div className="mx-auto space-y-8 sm:space-y-0 sm:flex sm:justify-between sm:items-center flex-col">
         <div className="input-container  flex flex-col gap-6">
           <input
@@ -107,16 +102,16 @@ function QnA() {
             placeholder="Enter your question..."
             value={question}
             onChange={handleQuestionChange}
-            className="w-full sm:w-auto"
+            className="w-full min-w-300 lg:min-w-96 lg:max-w-500"
           />
           <button
             id="submitButton"
             onClick={handleSubmit}
-            className="mt-2 sm:mt-0 sm:ml-4 bg-gradient-to-tr from-gray-300 via-blue-100 to-gray-100 text-gray-700 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className=" mt-2 sm:mt-0 sm:ml-4 bg-gradient-to-tr from-gray-300 via-blue-100 to-gray-100 text-gray-700 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           >
             Submit
           </button>
-          <div className="response-box" id="responseBox">
+          <div className="response-box w-full" id="responseBox">
             {loading ? (
               <Spinner />
             ) : (
