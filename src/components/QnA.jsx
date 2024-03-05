@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import Spinner from "./UI/Spinner";
+
 const API_KEY = import.meta.env.VITE_API_KEY;
 const systemMessage =
   "I will have the pleasure to help you with any questions related to JavaScript as a programming language or any framework or library that works with JavaScript.";
@@ -116,7 +118,7 @@ function QnA() {
           </button>
           <div className="response-box" id="responseBox">
             {loading ? (
-              <p>Loading...</p>
+              <Spinner />
             ) : (
               response && renderResponseContent() && <p>{response}</p>
             )}
