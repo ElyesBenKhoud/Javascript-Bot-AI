@@ -5,6 +5,7 @@ import "@chatscope/chat-ui-kit-styles/dist/default/styles.min.css";
 import LandingPage from "./pages/LandingPage";
 import QnA from "./components/QnA";
 import Header from "./components/UI/Header";
+import ChatComponent from "./pages/ChatComponent";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/javascript-ai" element={<QnA />} />
+          <Route path="/javascript-ai" element={<ChatComponent />} />
         </Routes>
       </>
     </Router>

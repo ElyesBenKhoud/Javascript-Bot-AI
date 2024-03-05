@@ -57,12 +57,9 @@ function FreqQ() {
         </div>
 
         <div className="text-center">
-          <a
-            href="javascript:void(0)"
-            className="inline-flex items-center justify-center space-x-2 rounded-lg border border-gray-300 bg-yellow-400 px-7 py-3.5 font-semibold leading-6 text-black  hover:bg-gray-300 hover:text-black hover:border-gray-300 focus:ring focus:ring-yellow-400 focus:ring-opacity-50 "
-          >
+          <button className="inline-flex items-center justify-center space-x-2 rounded-lg border border-gray-300 bg-yellow-400 px-7 py-3.5 font-semibold leading-6 text-black  hover:bg-gray-300 hover:text-black hover:border-gray-300 focus:ring focus:ring-yellow-400 focus:ring-opacity-50 ">
             <span>Go to support</span>
-          </a>
+          </button>
         </div>
       </div>
     </div>

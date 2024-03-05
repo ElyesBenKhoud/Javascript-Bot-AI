@@ -85,22 +85,16 @@ function Reviews() {
                 recommended them.
               </p>
               <footer className="space-y-4">
-                <a
-                  href="javascript:void(0)"
-                  className="mx-auto block size-20 overflow-hidden rounded-full border-2 border-gray-50 transition duration-150 ease-out hover:scale-125 hover:border-white hover:shadow-md active:scale-110 active:border-gray-50 active:shadow-sm dark:border-gray-900 dark:shadow-gray-950"
-                >
+                <button className="mx-auto block size-20 overflow-hidden rounded-full border-2 border-gray-50 transition duration-150 ease-out hover:scale-125 hover:border-white hover:shadow-md active:scale-110 active:border-gray-50 active:shadow-sm dark:border-gray-900 dark:shadow-gray-950">
                   <img
                     src="https://cdn.tailkit.com/media/placeholders/avatar-iFgRcqHznqg-160x160.jpg"
                     alt="Avatar Photo"
                   />
-                </a>
+                </button>
                 <div>
-                  <a
-                    href="javascript:void(0)"
-                    className="text-lg font-semibold text-gray-900 hover:text-yellow-300 "
-                  >
+                  <button className="text-lg font-semibold text-gray-900 hover:text-yellow-300 ">
                     John Smith
-                  </a>
+                  </button>
                   <div className="mx-auto my-1 h-1 w-10 rounded-lg bg-yellow-300 5"></div>
                   <p className="font-medium text-gray-500 dark:text-gray-400">
                     Founder and Lead Developer
