@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/jsai-logo.png";
+import logo from "../../assets/jsai-logo.png";
 
 //TODO set redirect to home page on logo click
 function Header() {
