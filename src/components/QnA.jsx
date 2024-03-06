@@ -4,6 +4,7 @@ import Spinner from "./UI/Spinner";
 
 const API_KEY = import.meta.env.VITE_API_KEY;
 
+//input gets empty after submitting subjects from user
 const ChatGPTResponse =
   "I will have the pleasure to help you with any questions related to Javascript as programming language or any framework or library that works with JavaScript";
 
