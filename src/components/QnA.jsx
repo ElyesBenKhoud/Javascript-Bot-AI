@@ -3,8 +3,14 @@ import React, { useState } from "react";
 import Spinner from "./UI/Spinner";
 
 const API_KEY = import.meta.env.VITE_API_KEY;
-const systemMessage =
-  "I will have the pleasure to help you with any questions related to JavaScript as a programming language or any framework or library that works with JavaScript.";
+
+const ChatGPTResponse =
+  "I will have the pleasure to help you with any questions related to Javascript as programming language or any framework or library that works with JavaScript";
+
+const systemMessage = {
+  role: "system",
+  content: `Answer for question that is related to javascript or any framework or library that works with javascript only if anything else just response with ${ChatGPTResponse} .`,
+};
 
 function QnA({ question, setQuestion }) {
   const [response, setResponse] = useState("");
