@@ -5,12 +5,28 @@ import Spinner from "./UI/Spinner";
 const API_KEY = import.meta.env.VITE_API_KEY;
 
 //input gets empty after submitting subjects from user
-const ChatGPTResponse =
-  "I will have the pleasure to help you with any questions related to Javascript as programming language or any framework or library that works with JavaScript";
+const ChatGPTResponse = [
+  "I will have the pleasure to help you with any questions related to Javascript as programming language or any framework or library that works with JavaScript",
+  "Feel free to ask me anything about JavaScript or related frameworks and libraries!",
+  "Need assistance with JavaScript or its related technologies? I'm here to help!",
+  "JavaScript is my expertise! Ask me anything about it.",
+  "Let's dive into JavaScript together! What would you like to know?",
+  "Curious about JavaScript or its ecosystem? Ask away!",
+  "JavaScript questions? I've got you covered!",
+  "Ready to tackle any JavaScript challenges you throw at me!",
+  "JavaScript knowledge at your service! Fire away your questions.",
+  "Exploring JavaScript or its derivatives? I'm your go-to source for answers!",
+];
+
+// Function to randomly select a response from the responses array
+const getRandomResponse = () => {
+  const randomIndex = Math.floor(Math.random() * ChatGPTResponse.length);
+  return ChatGPTResponse[randomIndex];
+};
 
 const systemMessage = {
   role: "system",
-  content: `Answer for question that is related to javascript or any framework or library that works with javascript only if anything else just response with ${ChatGPTResponse} .`,
+  content: `Answer for question that is related to javascript or any framework or library that works with javascript only if anything else just response with ${getRandomResponse()} .`,
 };
 
 function QnA({ question, setQuestion }) {
