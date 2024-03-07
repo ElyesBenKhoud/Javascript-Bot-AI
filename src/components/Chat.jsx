@@ -12,8 +12,8 @@ const API_KEY = import.meta.env.VITE_API_KEY;
 
 const ChatGPTResponse =
   "I will have the pleasure to help you with any questions related to Javascript as programming language or any framework or library that works with JavaScript";
+
 const systemMessage = {
-  //  Explain things like you're talking to a software professional with 5 years of experience.
   role: "system",
   content: `Answer for question that is related to javascript or any framework or library that works with javascript only if anything else just response with ${ChatGPTResponse} .`,
 };
