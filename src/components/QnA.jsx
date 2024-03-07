@@ -29,7 +29,7 @@ function QnA({ question, setQuestion }) {
     const requestBody = {
       model: "gpt-3.5-turbo",
       messages: [
-        { role: "system", content: systemMessage },
+        { role: "system", content: systemMessage.content },
         { role: "user", content: question },
       ],
     };
@@ -99,6 +99,12 @@ function QnA({ question, setQuestion }) {
     }
   };
 
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter") {
+      handleSubmit();
+    }
+  };
+
   return (
     <div className=" py-16 px-10 lg:px-8 rounded-lg shadow-md bg-gradient-to-tr from-yellow-300 via-yellow-100 to-gray-100">
       <div className="mx-auto space-y-8 sm:space-y-0 sm:flex sm:justify-between sm:items-center flex-col">
@@ -110,6 +116,7 @@ function QnA({ question, setQuestion }) {
             value={question}
             onChange={handleQuestionChange}
             className="w-full min-w-300 lg:min-w-96 lg:max-w-500"
+            onKeyDown={handleKeyDown}
           />
           <button
             id="submitButton"
