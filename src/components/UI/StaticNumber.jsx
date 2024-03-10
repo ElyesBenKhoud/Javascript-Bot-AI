@@ -1,5 +1,6 @@
 import React from "react";
 
+//TODO move this component to  QnA
 function StaticNumber() {
   return (
     <div

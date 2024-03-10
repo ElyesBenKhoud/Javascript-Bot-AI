@@ -13,6 +13,7 @@ function App() {
     <Router>
       <>
         <Header />
+
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/javascript-ai" element={<ChatComponent />} />

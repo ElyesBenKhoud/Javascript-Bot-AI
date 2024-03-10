@@ -11,6 +11,7 @@ function ChatComponent() {
   };
 
   //TODO Design QnA and Suggestions components
+
   return (
     <>
       <div className="sm:grid sm:grid-flow-row-dense sm:grid-cols-3 sm:grid-rows-1 flex flex-col  items-start gap-10 sm:px-32">
@@ -21,6 +22,7 @@ function ChatComponent() {
           <Suggestions handleSuggestionClick={handleSuggestionClick} />
         </div>
       </div>
+
       <StaticNumber />
     </>
   );
