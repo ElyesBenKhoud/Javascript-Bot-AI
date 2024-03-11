@@ -78,6 +78,9 @@ function QnA({ question, setQuestion }) {
     }
   };
 
+  //This function is not formating as expected ! use prismjs in order to loop through AI responses
+  //and then format any lines that comes within javascript tags
+
   const renderResponseContent = () => {
     // Split response by new line character to get individual lines
     const lines = response.split("\n");
