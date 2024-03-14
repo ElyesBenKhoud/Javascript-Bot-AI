@@ -7,15 +7,20 @@ jobs:
     runs-on: windows
 
     strategy:
-      matrix: node-version:[18.x, 16.x, 14.x]
+      matrix:
+        node_version: [18.x, 16.x, 14.x]
 
     steps:
-      - uses: actions/checkout@2
+      - name: Checkout code
+        uses: actions/checkout@v2
+
       - name: Use node.js ${{matrix.node_version}}
         uses: actions/setup-node@v1
         with:
-          node_version: ${{matrix.node_version}}
-        name: npm install
+          node-version: ${{matrix.node_version}}
+
+      - name: npm install
         run: npm ci
-        name: tests
+
+      - name: Run tests
         run: npm test
