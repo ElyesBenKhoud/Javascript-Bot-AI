@@ -145,6 +145,7 @@ function QnA({ question, setQuestion }) {
           >
             Submit
           </button>
+
           {response && (
             <div
               className="response-box w-full"
