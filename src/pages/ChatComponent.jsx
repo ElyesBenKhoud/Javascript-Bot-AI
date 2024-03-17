@@ -22,10 +22,11 @@ function ChatComponent() {
           <div className="sm:col-span-2">
             <QnA question={question} setQuestion={setQuestion} />
           </div>
+
+          <div>
+            <Suggestions handleSuggestionClick={handleSuggestionClick} />
+          </div>
         </Suspense>
-        <div>
-          <Suggestions handleSuggestionClick={handleSuggestionClick} />
-        </div>
       </div>
 
       <StaticNumber />
