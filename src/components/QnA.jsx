@@ -137,6 +137,7 @@ function QnA({ question, setQuestion }) {
             className="w-full min-w-300 lg:min-w-96 lg:max-w-500"
             onKeyDown={handleKeyDown}
           />
+
           <button
             id="submitButton"
             onClick={handleSubmit}
@@ -144,13 +145,20 @@ function QnA({ question, setQuestion }) {
           >
             Submit
           </button>
-          <div className="response-box w-full" id="responseBox">
-            {loading ? (
-              <Spinner />
-            ) : (
-              response && renderResponseContent() && <p>{response}</p>
-            )}
-          </div>
+
+          {response && (
+            <div
+              className="response-box w-full"
+              id="responseBox"
+              style={{ backgroundColor: response ? "#ECECEC" : "" }}
+            >
+              {loading ? (
+                <Spinner />
+              ) : (
+                renderResponseContent() && <p>{response}</p>
+              )}
+            </div>
+          )}
         </div>
       </div>
     </div>

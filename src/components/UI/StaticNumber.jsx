@@ -7,11 +7,11 @@ function StaticNumber() {
       className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:gap-8 sm:px-32 px-10 py-10"
       style={{ userSelect: "none" }}
     >
-      <div className="flex flex-col overflow-hidden rounded-lg bg-gray-600 shadow-sm ">
+      <div className="flex flex-col overflow-hidden rounded-lg bg-gray-800 shadow-sm ">
         <div className="flex grow items-center justify-between p-5">
           <dl className="space-y-1">
             <dt className="text-2xl font-bold">14k</dt>
-            <dd className="text-sm font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">
+            <dd className="text-sm font-semibold uppercase tracking-wider text-yellow-300 ">
               Users online
             </dd>
           </dl>
@@ -33,11 +33,11 @@ function StaticNumber() {
         </div>
       </div>
 
-      <div className="flex flex-col overflow-hidden rounded-lg bg-gray-600 shadow-sm ">
+      <div className="flex flex-col overflow-hidden rounded-lg bg-gray-900 shadow-sm ">
         <div className="flex grow items-center justify-between p-5">
           <dl className="space-y-1">
             <dt className="text-2xl font-bold">$5,128</dt>
-            <dd className="text-sm font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">
+            <dd className="text-sm font-semibold uppercase tracking-wider text-yellow-300 ">
               Requests costs
             </dd>
           </dl>
@@ -59,11 +59,11 @@ function StaticNumber() {
         </div>
       </div>
 
-      <div className="flex flex-col overflow-hidden rounded-lg bg-gray-600 shadow-sm ">
+      <div className="flex flex-col overflow-hidden rounded-lg bg-gray-900 shadow-sm ">
         <div className="flex grow items-center justify-between p-5">
           <dl className="space-y-1">
             <dt className="text-2xl font-bold">120k</dt>
-            <dd className="text-sm font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">
+            <dd className="text-sm font-semibold uppercase tracking-wider text-yellow-300 dark:text-gray-400">
               Daily Requests numbers
             </dd>
           </dl>
