@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Code } from "@chakra-ui/react";
 import Spinner from "./UI/Spinner";
 
 const API_KEY = import.meta.env.VITE_API_KEY;
@@ -100,15 +100,13 @@ function QnA({ question, setQuestion }) {
           })}
         </ul>
       );
-    } else if (response.includes("```")) {
+    } else if (lines.includes("```")) {
       // Check if response contains a code block
       // If it does, format it with <pre> and <code> tags
       const formattedResponse = response.replace(
         /```(.*)\n([\s\S]*?)\n```/g,
-        (match, language, code) => (
-          <pre key={language}>
-            <code className={`language-${language.trim()}`}>{code.trim()}</code>
-          </pre>
+        (language, code) => (
+          <Code className={`language-${language.trim()}`}>{code.trim()}</Code>
         )
       );
       return formattedResponse;
@@ -125,7 +123,7 @@ function QnA({ question, setQuestion }) {
   };
 
   return (
-    <div className=" py-16 px-10 lg:px-8 rounded-lg shadow-md bg-gradient-to-tr from-yellow-300 via-yellow-100 to-gray-100">
+    <div className="text-xl font-medium leading-relaxed text-gray-600 py-16 px-10 lg:px-8 rounded-lg shadow-md bg-gradient-to-tr from-gray-100 via-gray-200 to-gray-300 min-w-72 min-w-300  flex flex-col gap-4 ">
       <div className="mx-auto space-y-8 sm:space-y-0 sm:flex sm:justify-between sm:items-center flex-col">
         <div className="input-container  flex flex-col gap-6">
           <input
@@ -138,13 +136,17 @@ function QnA({ question, setQuestion }) {
             onKeyDown={handleKeyDown}
           />
 
-          <button
-            id="submitButton"
-            onClick={handleSubmit}
-            className=" mt-2 sm:mt-0 sm:ml-4 bg-gradient-to-tr from-gray-300 via-blue-100 to-gray-100 text-gray-700 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-          >
-            Submit
-          </button>
+          {loading ? (
+            <Spinner />
+          ) : (
+            <button
+              id="submitButton"
+              onClick={handleSubmit}
+              className=" mt-2 sm:mt-0 sm:ml-4 bg-gradient-to-tr from-gray-300 via-blue-100 to-gray-100 text-gray-700 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            >
+              Submit
+            </button>
+          )}
 
           {response && (
             <div

@@ -17,9 +17,9 @@ function ChatComponent() {
 
   return (
     <>
-      <div className="sm:grid sm:grid-flow-row-dense sm:grid-cols-3 sm:grid-rows-1 flex flex-col  items-start gap-10 sm:px-32">
+      <div className="sm:grid sm:grid-flow-row-dense sm:grid-cols-3 sm:grid-rows-1 flex flex-col  items-start gap-10 sm:px-32 flex-grow ">
         <Suspense fallback={<Spinner />}>
-          <div className="sm:col-span-2">
+          <div className="sm:col-span-2 w-screen md:w-auto">
             <QnA question={question} setQuestion={setQuestion} />
           </div>
 
