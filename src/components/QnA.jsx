@@ -32,9 +32,11 @@ const systemMessage = {
 function QnA({ question, setQuestion }) {
   const [response, setResponse] = useState("");
   const [loading, setLoading] = useState(false);
+  const [size, setSize] = useState(null);
 
   const handleQuestionChange = (e) => {
     setQuestion(e.target.value);
+    setSize(e.target.value.length);
   };
 
   const handleSubmit = async () => {
@@ -132,8 +134,9 @@ function QnA({ question, setQuestion }) {
             placeholder="Enter your question..."
             value={question}
             onChange={handleQuestionChange}
-            className="w-full min-w-300 lg:min-w-96 lg:max-w-500"
+            className="w-full min-w-500 lg:min-w-96 lg:max-w-500"
             onKeyDown={handleKeyDown}
+            size={size}
           />
 
           {loading ? (
