@@ -134,7 +134,7 @@ function QnA({ question, setQuestion }) {
             placeholder="Enter your question..."
             value={question}
             onChange={handleQuestionChange}
-            className="w-full min-w-500 lg:min-w-96 lg:max-w-500"
+            className="w-full min-w-500 lg:min-w-96 lg:max-w-500 "
             onKeyDown={handleKeyDown}
             size={size}
           />
