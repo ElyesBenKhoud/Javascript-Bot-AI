@@ -16,11 +16,11 @@ function LandingPage() {
         <StaticDataForLandingPage />
         <StaticPicForLandingPage />
       </div>
+
       <hr />
       <StaticComponent />
       <Cards />
       <Reviews />
-      {/* <FreQ /> */}
     </div>
   );
 }
