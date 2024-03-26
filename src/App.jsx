@@ -8,6 +8,7 @@ import ChatComponent from "./pages/ChatComponent";
 import "@chatscope/chat-ui-kit-styles/dist/default/styles.min.css";
 import "@mantine/core/styles.css";
 import "./App.css";
+import Footer from "./components/UI/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/javascript-ai" element={<ChatComponent />} />
         </Routes>
+        <Footer />
       </>
     </Router>
   );
