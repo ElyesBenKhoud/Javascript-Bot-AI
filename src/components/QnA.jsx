@@ -24,7 +24,7 @@ function QnA({ question, setQuestion }) {
   const handleSubmit = async () => {
     if (question.trim() === "") return;
 
-    setLoading(true); // Activate loader
+    setLoading(true);
 
     const requestBody = {
       model: "gpt-3.5-turbo",
@@ -57,7 +57,7 @@ function QnA({ question, setQuestion }) {
     } catch (error) {
       console.error("Error:", error);
     } finally {
-      setLoading(false); // Deactivate loader
+      setLoading(false);
       setQuestion("");
     }
   };
